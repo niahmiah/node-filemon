@@ -1,0 +1,28 @@
+{
+  "name": "node-hwmon",
+  "version": "0.0.1",
+  "description": "A hardware monitor written for node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/niahmiah/node-hwmon.git"
+  },
+  "keywords": [
+    "node",
+    "hardware",
+    "monitor",
+    "iostat"
+  ],
+  "author": "Ian Patton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niahmiah/node-hwmon/issues"
+  },
+  "homepage": "https://github.com/niahmiah/node-hwmon",
+  "dependencies": {
+    "shelljs": "^0.3.0"
+  }
+}

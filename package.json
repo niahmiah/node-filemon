@@ -1,5 +1,5 @@
 {
-  "name": "node-hwmon",
+  "name": "hwmon",
   "version": "0.0.1",
   "description": "A hardware monitor written for node.js",
   "main": "index.js",
@@ -14,7 +14,8 @@
     "node",
     "hardware",
     "monitor",
-    "iostat"
+    "iostat",
+    "json"
   ],
   "author": "Ian Patton",
   "license": "MIT",

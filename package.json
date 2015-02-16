@@ -1,0 +1,34 @@
+{
+  "name": "filemon",
+  "version": "1.0.0",
+  "description": "Emits an event containing file data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niahmiah/node-filemon.git"
+  },
+  "keywords": [
+    "node",
+    "monitor",
+    "file",
+    "system",
+    "resource"
+  ],
+  "author": "Ian Patton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niahmiah/node-filemon/issues"
+  },
+  "homepage": "https://github.com/niahmiah/node-filemon",
+  "dependencies": {
+    "async": "^1.5.0",
+    "cron": "^1.0.9"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {}
+}

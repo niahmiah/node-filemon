@@ -15,3 +15,26 @@ hwmon.on('iostat', function(data){
 
 hwmon.start();
 ```
+
+### Output:
+```
+{ 
+  'avg-cpu:': {
+     '%user': '0.08',
+     '%nice': '0.00',
+     '%system': '0.13',
+     '%iowait': '0.00',
+     '%steal': '0.00',
+     '%idle': '99.79' 
+   },
+   devices: { 
+     sda: { 
+       tps: '0.61',
+       'kB_read/s': '7.40',
+       'kB_wrtn/s': '4.01',
+       'kB_read': '81191',
+       'kB_wrtn': '44008' 
+     } 
+   } 
+}
+```

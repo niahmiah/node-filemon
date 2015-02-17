@@ -3,6 +3,10 @@ var shell = require('shelljs');
 var util = require('util');
 var EventEmitter = require('events').EventEmitter;
 
+if(!shell.which('iostat')){
+  throw new Error('hwmon requires iostat');
+}
+
 function Hwmon(options){
   this.interval = options.interval;
   this.timer = null;
@@ -24,10 +28,6 @@ Hwmon.prototype.stop = function(){
 }
 
 Hwmon.prototype.fetchData = function(){
-  if(!shell.which('iostat')){
-    throw new Error('hwmon requires iostat');
-  }
-
   var self = this;
   var stats = false;
   var sysInfo;

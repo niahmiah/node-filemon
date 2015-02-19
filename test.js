@@ -9,9 +9,12 @@ hwmon.on('free', function(data){
   console.log('free',data);
 });
 
+hwmon.on('df', function(data){
+  console.log('df',data);
+});
+
 hwmon.start();
 
 setTimeout(function(){
   hwmon.stop();
 },5000);
-

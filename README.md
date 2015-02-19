@@ -1,7 +1,7 @@
 # hwmon
 hwmon is a hardware monitor written for node.js systems running on Linux.
 
-The current version is simply a wrapper around the 'free' and 'iostat' commands on Linux, that returns the output in JSON format.
+The current version is simply a wrapper around the 'df', free' and 'iostat' commands on Linux, that returns the output in JSON format.
 
 ### Usage: 
 
@@ -15,6 +15,10 @@ hwmon.on('iostat', function(data){
 
 hwmon.on('free', function(data){
   console.log('free',data);
+});
+
+hwmon.on('df', function(data){
+  console.log('df',data);
 });
 
 hwmon.start();
@@ -39,5 +43,12 @@ iostat { 'avg-cpu:':
      '%steal': 0,
      '%idle': 99.62 },
   devices: { sda: { tps: 0, 'kB_read/s': 0, 'kB_wrtn/s': 0, kB_read: 0, kB_wrtn: 0 } } }
+
+  df { '/dev/sda1':
+   { '1M-blocks': '26079',
+     Used: '1244',
+     Available: '23488',
+     'Use%': '6%',
+     Mounted: '/' } }
  
  ```

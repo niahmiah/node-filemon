@@ -14,7 +14,7 @@ function Hwmon(options){
 
 util.inherits(Hwmon, EventEmitter);
 
-Hwmon.prototype.start = function(){
+Hwmon.prototype.start = function(callback){
   var self = this;
   iostat = new Iostat({interval: self.interval});
   iostat.start();
@@ -31,6 +31,7 @@ Hwmon.prototype.start = function(){
   df.on('df', function(json){
     self.emit('df', json);
   });
+  if(callback) { callback(); }
 };
 
 Hwmon.prototype.stop = function(){

@@ -1,4 +1,6 @@
 # filemon
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/niahmiah/node-filemon.svg)](https://greenkeeper.io/)
 filemon emits an event containing data for files it is configured to watch.
 
 ### Usage:
